@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState } from "react";
 import { useForm } from "../hooks/useForm";
 export const FormTaks = ({ tasks, setTask }) => {
     const [values, reset, handleInputChange] = useForm({});
@@ -6,7 +6,7 @@ export const FormTaks = ({ tasks, setTask }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (values != undefined && values !== "") {
+        if (values !== undefined && values !== "") {
             setIsSended(true);
             setTask([
                 ...tasks,

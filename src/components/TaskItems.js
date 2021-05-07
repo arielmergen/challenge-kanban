@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 export const TaskItems = ({ tasks = [], setTask, handleTask }) => {
     const handleStatusTask = (id, typeStatus) => {
