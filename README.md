@@ -26,6 +26,6 @@ In the project directory, you can run:
 
 ### URL DEMO
 
-url:
+url:https://6095a5d7fe00a52516854f34--dreamy-hugle-861152.netlify.app/
 
 ![UI](/kanban.jpg?raw=true)
