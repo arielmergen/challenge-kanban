@@ -1,0 +1,25 @@
+.btn {
+    background: transparent;
+    border: 0;
+    color: #000000;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.btn-primary {
+    background: #d71920;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 4px 4px 4px 4px;
+}
+.btn-block {
+    width: 100%;
+}
+.btn:disabled {
+    opacity: 0.5;
+}
