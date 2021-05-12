@@ -30,7 +30,8 @@ export const BoardApp = () => {
 
     useEffect(() => {
         setTasks(update);
-    }, [taskStateColum]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [taskStateColum, setTasks]);
 
     return (
         <div className="wrapper">
