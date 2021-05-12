@@ -34,8 +34,7 @@ export const FormTaks = ({ tasks, setTask }) => {
                     className="taks-description"
                     rows="10"
                     cols="50"
-                    defaultValue={""}
-                    value={values.description}
+                    value={values.description ? values.description : ""}
                     onChange={handleInputChange}
                 />
                 <button type="submit" className="btn btn-primary btn-block" disabled={isSended}>
