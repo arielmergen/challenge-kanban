@@ -1,4 +1,4 @@
-# Implementar un tablero Kanban simple
+# Implementar un tablero Kanban Drag And Drop
 
 ### URL DEMO
 
