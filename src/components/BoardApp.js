@@ -20,20 +20,17 @@ export const BoardApp = () => {
         [setTaskStateColum]
     );
 
+    const update = (tasks) =>
+        tasks.map((item) => {
+            if (item.id === parseInt(taskStateColum.task_id, 10)) {
+                return { ...item, status: taskStateColum.status };
+            }
+            return item;
+        });
+
     useEffect(() => {
-        setTasks(
-            tasks.map((item) => {
-                if (item.id === parseInt(taskStateColum.task_id)) {
-                    return {
-                        ...item,
-                        status: taskStateColum.status,
-                    };
-                }
-                return item;
-            })
-        );
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [taskStateColum, setTasks]);
+        setTasks(update);
+    }, [taskStateColum]);
 
     return (
         <div className="wrapper">
