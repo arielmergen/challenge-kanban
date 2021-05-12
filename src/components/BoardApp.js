@@ -55,8 +55,9 @@ export const BoardApp = () => {
                                     key={item.id}
                                     item={item}
                                     setTasks={setTasks}
-                                    board="sinrealizar"
+                                    boardname="sinrealizar"
                                     tasks={tasks}
+                                    manageStateColumn={manageStateColumn}
                                 />
                             ))}
                 </Tasks>
@@ -66,6 +67,7 @@ export const BoardApp = () => {
                     title="En proceso"
                     tasks={tasks}
                     setTask={setTasks}
+                    boardname="enproceso"
                     manageStateColumn={manageStateColumn}
                 >
                     {tasks.length > 0 &&
@@ -80,6 +82,7 @@ export const BoardApp = () => {
                                     tasks={tasks}
                                     setTasks={setTasks}
                                     boardname="enproceso"
+                                    manageStateColumn={manageStateColumn}
                                 />
                             ))}
                 </Tasks>
@@ -103,6 +106,7 @@ export const BoardApp = () => {
                                     tasks={tasks}
                                     setTasks={setTasks}
                                     boardname="finalizado"
+                                    manageStateColumn={manageStateColumn}
                                 />
                             ))}
                 </Tasks>
