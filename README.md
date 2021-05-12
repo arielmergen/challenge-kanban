@@ -1,5 +1,9 @@
 # Implementar un tablero Kanban simple
 
+### URL DEMO
+
+url:https://dreamy-hugle-861152.netlify.app/
+
 ## Tarea
 
 Implementar un tablero Kanban simple que cumpla con las siguientes
@@ -23,9 +27,5 @@ In the project directory, you can run:
 ```
 
 ```
-
-### URL DEMO
-
-url:https://dreamy-hugle-861152.netlify.app/
 
 ![UI](/kanban.jpg?raw=true)

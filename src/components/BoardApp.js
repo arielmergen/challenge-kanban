@@ -19,6 +19,7 @@ export const BoardApp = () => {
         },
         [setTaskStateColum]
     );
+
     useEffect(() => {
         setTasks(
             tasks.map((item) => {
@@ -31,7 +32,9 @@ export const BoardApp = () => {
                 return item;
             })
         );
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [taskStateColum, setTasks]);
+
     return (
         <div className="wrapper">
             <FormTaks tasks={tasks} setTask={setTasks} />

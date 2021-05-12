@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const Tasks = ({ id, tasks = [], children, className, title, setTask, manageStateColumn }) => {
+export const Tasks = React.memo(({ id, tasks = [], children, className, title, setTask, manageStateColumn }) => {
     const [activeDrag, setActivedrag] = useState(false);
     const drop = (e) => {
         e.preventDefault();
@@ -29,19 +29,6 @@ export const Tasks = ({ id, tasks = [], children, className, title, setTask, man
         setActivedrag(false);
     };
 
-    // const triggerChange = useCallback(() => {
-    //     const newTasks = tasks.map((item) => {
-    //         if (item.id === parseInt(taskToUpdate.task_id)) {
-    //             return {
-    //                 ...item,
-    //                 status: taskToUpdate.status,
-    //             };
-    //         }
-    //         return item;
-    //     });
-    //     setTask(newTasks);
-    // }, [taskToUpdate, setTask]);
-
     return (
         <div
             id={id}
@@ -55,4 +42,4 @@ export const Tasks = ({ id, tasks = [], children, className, title, setTask, man
             {children}
         </div>
     );
-};
+});
